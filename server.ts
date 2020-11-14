@@ -41,10 +41,12 @@ export function app() {
 }
 
 function run() {
-  const port = process.env.PORT || 8080;
+   const port = process.env.PORT || 8080;
+  
 
   // Start up the Node server
   const server = app();
+
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
