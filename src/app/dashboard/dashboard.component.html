@@ -1,19 +1,14 @@
 <!-- <skyb-common-header>
 
-</skyb-common-header>
- -->
+</skyb-common-header> -->
+
 
 
 <h3>Top Bookings</h3>
 <div class="grid grid-pad">
     <a *ngFor="let booking of bookings" class="col-1-4" routerLink="/detail/{{booking.pnr}}">
         <div class="module hero">
-            <h4>{{booking|json}}</h4>
+            <h4>{{booking.pnr}}</h4>
         </div>
     </a>
 </div>
-
-
-
-
-<app-hero-search></app-hero-search>
