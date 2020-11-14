@@ -13,8 +13,8 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install and cache app dependencies
 RUN npm install -g @angular/cli@10.1.7
 
-USER node
-COPY --chown=node:node . .
+# USER node
+# COPY --chown=node:node . .
 
 
 # add app
