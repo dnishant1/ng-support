@@ -24,6 +24,6 @@ RUN npm install
 RUN npm run build:ssr
 
 
-EXPOSE 8080 80 4000 4100 4200
+EXPOSE 8080
 # start app
 CMD node dist/server/main.js
